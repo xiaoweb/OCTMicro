@@ -1,0 +1,153 @@
+/** * Created with WebStorm. * User: RD-小小WEB * Date: 2015/3/26 * Time: 11:26 */
+@charset "utf-8";
+*{margin: 0;padding: 0;  }
+body, canvas, div {-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.blue-slide {  background: #4390EE;  }
+.red-slide {  background: #CA4040;  }
+.orange-slide {  background: #FF8604;  }
+.swiper-slide {  height:100%;  color: #fff;  font-size: 36px;  text-align: center;  position: relative;  }
+html,body,.swiper-container{height:100%;word-wrap: break-word;word-break: normal;overflow: hidden;}
+.swiper-container{/*max-height:591px;*/background: #222;}
+h1{padding: 0.2em 0;font-size:1em;}
+h2{padding:  0 0 0.1em 0;font-size:0.8em;}
+h1,h2,.text-content{width:92%;margin:10px 4%;line-height:1.5;}
+*{padding:0;margin:0;font-family:Microsoft YaHei,Arial,Lucida,Verdana,Hiragino Sans GB,STHeiti,WenQuanYi Micro Hei,SimSun,sans-serif}
+body.html{height:100%;width:100%;}
+#content{width:100%;/*height:504px;*/}
+.style-content{width:100%;height:100%;position: relative;overflow: hidden;}
+.style-content div,.style-content h1,.style-content h2,.style-content h3,.style-content h4,.style-content h5{/*transition: 1s;*/position:relative;}
+.style-content.ready div,.style-content.ready h1,.style-content.ready h2,.style-content.ready h3,.style-content.ready h4,.style-content.ready h5{/*transition: 0s!important;*/}
+.slide-arrow{position:absolute;width:17px;height:18px;bottom:45px;left:50%;margin-left:-8px;background-size:100px auto;z-index:10;pointer-events:none;-webkit-animation: arrow-move 1.5s infinite;background:url(../images/firstpage-icon.png) no-repeat;background-size: 100px;}
+.swiper-container{-webkit-transform-origin:top;width: 320px;height:515px;}
+@-webkit-keyframes arrow-move {
+    0% {
+        -webkit-transform: translate3d(0, 42px, 0);
+        opacity: 0
+    }
+    60% {
+        -webkit-transform: translate3d(0, 12px, 0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 0
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateZ(0deg)
+    }
+    100% {
+        -webkit-transform: rotateZ(360deg)
+    }
+}
+.loading-next-page-tips {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    height: 20px;
+    z-index: 10;
+    line-height: 20px;
+    text-align: center;
+    pointer-events: none;
+    display: none
+}
+
+.loading-next-page .loading-next-page-tips, .loading-next-page-tips.loading-next-page {
+    display: block
+}
+
+.loading-next-page-tips .circle, .loading-next-page-tips:after {
+    display: inline-block;
+    vertical-align: top
+}
+
+.loading-next-page-tips .circle {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/firstpage-icon.png) no-repeat -70px 0;
+    background-size: 100px auto;
+    -webkit-animation: spin 1.3s linear infinite
+}
+
+.loading-next-page-tips:after {
+    margin-left: 12px;
+    content: "新页面加载中";
+    color: #888;
+    font-size: 14px
+}
+
+.startbg{
+    position: fixed;
+    width: 100%;height: 100%;
+    left:0;top:0;
+    background:#000;
+    z-index:100;
+}
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    z-index: 1000
+}
+
+.loading div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/firstpage-loading.png) no-repeat;
+    background-size: 100px auto
+}
+
+.loading .point {
+    background-position: 0 0
+}
+
+.loading .circle {
+    background-position: -50px 0;
+    -webkit-animation: spin 1.1s linear infinite
+}
+
+@media screen and (orientation:portrait) {
+
+}
+@media screen and (orientation:landscape) and (min-width: 400px) {
+    body{display: none;}
+    html{background:url(../images/xuanzhuan.png) center no-repeat #000;background-size: 100%;}
+}
+
+.music-icon.play {
+    -webkit-animation: spin 2.3s linear infinite
+}
+
+.music-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(130, 170, 118, 0.6);
+    background: url(../images/firstpage-icon.png) no-repeat -30px -5px;
+    background-size: 100px auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    pointer-events: auto
+}
+
+.music-icon:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: -20px;
+
+}
+
+

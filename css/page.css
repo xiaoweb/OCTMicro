@@ -1,0 +1,7 @@
+﻿/** * Created with WebStorm. * User: RD-小小WEB * Date: 2015/3/30 * Time: 17:09 */
+.abso_back{width:100%;position: absolute;top:0;left: 0;}
+/*slide1*/
+.page-style-slide1{background:#faf8f9;}
+.page-style-slide1 img.logo{position:absolute;top:350px;left:0;width:34%;margin: 0 33%; }
+.page-style-slide1 img.zi{position: absolute;bottom:62px;width:80%;margin:0 10%;left:0;}
+.page-style-slide1 img.zi2{position: absolute;bottom:38px;width:38%;margin:0 31%;left:0;}
