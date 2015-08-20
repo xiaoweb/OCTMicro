@@ -1,2 +1,2 @@
 # OCTMicro
-[www.octmami.com](www.octmami.com)
+[www.octmami.com](http://www.octmami.com)
